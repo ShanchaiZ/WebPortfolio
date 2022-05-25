@@ -106,4 +106,28 @@ modalCloses.forEach((modalClose) => {
 })
 
 /* ==================== PORTFOLIO SWIPER ==================== */
+// Imported from Swiperjs.com site
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+
+
+
+/* ==================== TESTMONIAL ==================== */
+/* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
+/* ==================== CHANGE BACKGROUND HEADER ==================== */
+/* ==================== SHOW SCROLL TOP ==================== */
+/* ==================== DARK LIGHT HERE ==================== */
 
