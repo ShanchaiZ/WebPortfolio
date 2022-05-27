@@ -150,6 +150,11 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
+// XXXPICK UP HERE!!
+
+
+
+
 /* ==================== CHANGE BACKGROUND HEADER ==================== */
 /* ==================== SHOW SCROLL TOP ==================== */
 /* ==================== DARK LIGHT HERE ==================== */
