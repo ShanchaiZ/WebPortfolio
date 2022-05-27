@@ -64,7 +64,7 @@ const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]")
 
 
-tabs.forEach(tab =>{
+tabs.forEach(tab => {
     tab.addEventListener("click", () => {
         const target = document.querySelector(tab.dataset.target)
 
@@ -87,18 +87,18 @@ const modalViews = document.querySelectorAll(".services__modal"),
     modalCloses = document.querySelectorAll(".services__modal-close")
 
 
-let modal = function(modalClick){
+let modal = function (modalClick) {
     modalViews[modalClick].classList.add("active-modal")
 }
 
 modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener("click",  () => {
+    modalBtn.addEventListener("click", () => {
         modal(i)
     })
 })
 
 modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener("click", () =>{
+    modalClose.addEventListener("click", () => {
         modalViews.forEach((modalView) => {
             modalView.classList.remove("active-modal")
         })
@@ -107,25 +107,48 @@ modalCloses.forEach((modalClose) => {
 
 /* ==================== PORTFOLIO SWIPER ==================== */
 // Imported from Swiperjs.com site
-let swiper = new Swiper(".portfolio__container", {
+let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     mousewheel: true,
     keyboard: true,
-  });
+});
 
 
 
 /* ==================== TESTMONIAL ==================== */
+// Imported from Swiperjs.com site
+let swiperTestimonial = new Swiper(".testimonial__container", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    breakpoints: {
+        568:{
+            slidesPerview: 2,
+        }
+    }
+});
+
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
 /* ==================== CHANGE BACKGROUND HEADER ==================== */
 /* ==================== SHOW SCROLL TOP ==================== */
