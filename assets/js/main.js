@@ -173,7 +173,7 @@ window.addEventListener('scroll', scrollActive)
 /* ==================== CHANGE BACKGROUND HEADER ==================== */
 function scrollHeader(){
     const nav = document.getElementById("header")
-
+    // if the viewport height is greater or equal to 80, add the scroll header class to header tag. otherwise remove the shadow header
     if(this.scrollY >= 80) nav.classList.add("scroll-header"); 
     else nav.classList.remove("scroll-header")
 }
@@ -182,5 +182,14 @@ window.addEventListener("scroll", scrollHeader)
 
 
 /* ==================== SHOW SCROLL TOP ==================== */
-/* ==================== DARK LIGHT HERE ==================== */
+function scrollUp(){
+    const scrollUp = document.getElementById("scroll-up");
+    // if the scroll viewport height is greater than 560, add the show scroll class to the a tag with the scroll-tag class. Otherwise, remove it.
+    if(this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll")
+}
 
+window.addEventListener("scroll", scrollUp)
+
+/* ==================== DARK LIGHT HERE ==================== */
+// xxxpickup here!
