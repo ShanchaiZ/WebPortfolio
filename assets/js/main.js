@@ -191,5 +191,12 @@ function scrollUp(){
 
 window.addEventListener("scroll", scrollUp)
 
-/* ==================== DARK LIGHT HERE ==================== */
-// xxxpickup here!
+/* ==================== DARK LIGHT THEME ==================== */
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+})
+
